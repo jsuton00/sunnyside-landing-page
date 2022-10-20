@@ -1,0 +1,21 @@
+.navbar {
+	flex-basis: 75%;
+	width: 100%;
+	height: 100%;
+	justify-content: flex-end;
+	align-items: center;
+	padding: $spacing-xxs $spacing-sm;
+	gap: $spacing-xxl;
+
+	&-nav-item {
+		padding: $spacing-sm $spacing-base;
+		font-family: $barlow;
+		font-weight: 600;
+		color: $white;
+	}
+
+	.contact-button {
+		background-color: $white;
+		color: $veryDarkDesaturatedBlue;
+	}
+}

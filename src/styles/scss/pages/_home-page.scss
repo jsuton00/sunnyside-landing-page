@@ -1,0 +1,190 @@
+.checker-box {
+	&-layout {
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin: $spacing-xxl auto $spacing-xxl;
+	}
+	&-container {
+		flex-basis: 48%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 32rem;
+		height: 32rem;
+		font-family: $barlow;
+
+		@media (max-width: 992px) {
+			flex-basis: 95%;
+		}
+
+		&:first-child,
+		&:last-child {
+			padding: $spacing-xxl $spacing-xxl * 2;
+		}
+
+		&-title {
+			font-size: $font-size-xl;
+			font-weight: 700;
+			padding: $spacing-xxs 0;
+			margin-bottom: $spacing-xxs;
+		}
+
+		&-text {
+			color: $darkGrayishBlue;
+			padding: $spacing-xxs 0;
+			margin-bottom: $spacing-xxs;
+		}
+		&-button {
+			padding: $spacing-sm 0;
+
+			button {
+				border: none;
+				background-color: transparent;
+				padding: 0;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+.card-section {
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	gap: $spacing-base;
+	padding: $spacing-base 0;
+	margin: $spacing-base auto 0;
+
+	&-container {
+		position: relative;
+		flex-basis: 48%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 25rem;
+		height: 25rem;
+
+		@media (max-width: 992px) {
+			flex-basis: 95%;
+		}
+	}
+	&-bg-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.card {
+	&-title {
+		font-size: $font-size-xxl;
+		font-weight: 600;
+		text-align: center;
+		padding: $spacing-base 0;
+	}
+	&-text {
+		font-size: 1.125rem;
+		text-align: center;
+	}
+}
+
+.client-testimonials {
+	&-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin: 2% auto;
+
+		&-title {
+			font-size: $font-size-xxl;
+			font-weight: 600;
+			margin-bottom: $spacing-base;
+		}
+	}
+	&-cards {
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		padding: $spacing-xxs 0;
+	}
+
+	&-card {
+		flex-basis: 32%;
+		width: 100%;
+		max-width: 22.5rem;
+		height: 25rem;
+		padding: $spacing-base;
+		border: none;
+
+		@media (max-width: 992px) {
+			flex-basis: 95%;
+		}
+
+		&-image {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			text-align: center;
+
+			img {
+				border-radius: 50%;
+			}
+		}
+
+		&-body {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+		}
+
+		&-text {
+			text-align: center;
+			margin-bottom: $spacing-base;
+
+			&:last-child {
+				margin-top: $spacing-sm;
+				font-size: $font-size-sm;
+				color: $grayishBlue;
+				font-weight: 700;
+			}
+		}
+
+		&-title {
+			font-weight: 700;
+		}
+	}
+}
+
+.gallery {
+	&-section {
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	&-photo {
+		width: 25%;
+
+		@media (max-width: 992px) {
+			width: 95%;
+		}
+	}
+}
